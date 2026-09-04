@@ -444,6 +444,30 @@ means:
 
 > Every administrator is authenticated.
 
+### A symbol from the next unit — ∈
+
+The symbol `∈` means **is an element of** or **belongs to**. It is set notation, which we will study properly in Unit 2, but it appears naturally alongside quantifiers.
+
+For example:
+
+`user ∈ Admins`
+
+means:
+
+> user belongs to the set of administrators.
+
+So in:
+
+`∀ user ∈ Admins, authenticated(user)`
+
+we can read each piece as:
+
+- `∀ user` — for every user
+- `∈ Admins` — belonging to the set of administrators
+- `authenticated(user)` — that user is authenticated
+
+Altogether: **Every administrator is authenticated.**
+
 This resembles assertions developers make about an entire class of objects.
 
 ### Existential quantifier — ∃
@@ -457,6 +481,8 @@ For example:
 means:
 
 > There exists at least one user who is a moderator.
+
+Here again, `∈ Users` means **belongs to the set of Users**. The symbols `∀`, `∃`, and `∈` may look somewhat similar at first, but they have different jobs: `∀` says **every**, `∃` says **at least one exists**, and `∈` says **belongs to a set**.
 
 These are much more than unusual symbols. They distinguish two fundamentally different kinds of claims:
 
@@ -657,6 +683,9 @@ The central ideas of this unit are small:
 - A **predicate** becomes true or false depending on its input.
 - `∀` means every.
 - `∃` means at least one exists.
+- `∈` means **is an element of** or **belongs to** a set.
+
+A useful way to keep the three similar-looking symbols straight is: `∀` = **every**, `∃` = **exists**, `∈` = **belongs to**.
 
 None of these ideas is individually very large. Their importance comes from what we can build with them.
 
