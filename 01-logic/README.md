@@ -20,6 +20,50 @@ By the end of this unit, you should be able to:
 
 ---
 
+## Symbol reference
+
+Discrete mathematics uses a compact symbolic vocabulary. Some of these symbols belong to logic, while others belong to sets, counting, number theory, and later units. You do **not** need to know all of them yet. This table is here so that an unfamiliar symbol never has to appear without somewhere to look it up.
+
+| Symbol | Read as | Meaning | Example | Main unit |
+|---|---|---|---|---|
+| `¬` | not | Negates a statement | `¬p` | Logic |
+| `∧` | and | Both statements are true | `p ∧ q` | Logic |
+| `∨` | or | At least one statement is true | `p ∨ q` | Logic |
+| `⊕` | exclusive or / XOR | Exactly one of two statements is true | `p ⊕ q` | Logic / Boolean Algebra |
+| `→` | implies / if...then | If the left side is true, the right side must be true | `p → q` | Logic |
+| `↔` | if and only if | Both statements imply each other | `p ↔ q` | Logic |
+| `≡` | logically equivalent / equivalent | Two expressions have the same logical meaning | `¬(p ∧ q) ≡ ¬p ∨ ¬q` | Logic / Boolean Algebra |
+| `∀` | for all / for every | A statement applies to every item under consideration | `∀u ∈ Users, hasId(u)` | Logic |
+| `∃` | there exists | At least one item satisfies a statement | `∃u ∈ Users, admin(u)` | Logic |
+| `∈` | is an element of / belongs to | An item belongs to a set | `u ∈ Users` | Sets |
+| `∉` | is not an element of | An item does not belong to a set | `u ∉ Admins` | Sets |
+| `⊆` | is a subset of | Every element of one set is also in another | `Admins ⊆ Users` | Sets |
+| `⊂` | is a proper subset of | A set is contained in another and is not equal to it* | `Admins ⊂ Users` | Sets |
+| `∪` | union | Everything belonging to either set | `A ∪ B` | Sets |
+| `∩` | intersection | Everything belonging to both sets | `A ∩ B` | Sets |
+| `∅` | empty set | A set containing no elements | `A = ∅` | Sets |
+| `\` | set difference | Elements in one set but not another | `A \ B` | Sets |
+| `×` | Cartesian product | All ordered pairs formed from two sets | `Users × Roles` | Sets / Relations |
+| `=` | equals | Two values or objects are equal in the stated sense | `x = 5` | Throughout |
+| `≠` | not equal | Two values are not equal | `x ≠ 5` | Throughout |
+| `≤`, `≥` | less/greater than or equal to | Comparison or ordering | `x ≤ 10` | Relations / Throughout |
+| `|A|` | cardinality of A | Number of elements in a finite set | `|Users| = 100` | Sets / Counting |
+| `P(A)` or `𝒫(A)` | power set of A | Set of all subsets of A | `𝒫({a,b})` | Sets |
+| `Σ` | sum | Add a sequence or collection of values | `Σ xᵢ` | Counting / Algorithms |
+| `Π` | product | Multiply a sequence or collection of values | `Π xᵢ` | Counting |
+| `n!` | n factorial | Product `n × (n-1) × ... × 1` | `5! = 120` | Counting |
+| `C(n,k)` or `\binom{n}{k}` | n choose k | Number of ways to choose k items from n without order | `C(5,2) = 10` | Counting |
+| `⌊x⌋` | floor of x | Greatest integer less than or equal to x | `⌊3.8⌋ = 3` | Algorithms / Number Theory |
+| `⌈x⌉` | ceiling of x | Smallest integer greater than or equal to x | `⌈3.2⌉ = 4` | Algorithms / Number Theory |
+| `a ∣ b` | a divides b | b is divisible by a with no remainder | `3 ∣ 12` | Number Theory |
+| `a ≡ b (mod n)` | congruent modulo n | a and b have the same remainder modulo n | `17 ≡ 2 (mod 5)` | Number Theory |
+
+\*Some textbooks use `⊂` differently, so when precision matters we will state explicitly whether we mean a proper subset. `⊆` unambiguously allows the two sets to be equal.
+
+The most important symbols **for this unit** are `¬`, `∧`, `∨`, `→`, `↔`, `≡`, `∀`, and `∃`. The set-membership symbol `∈` also appears because quantified statements often say which collection an object belongs to. The others are previews; they will be introduced properly when their units arrive.
+
+---
+
 ## 1. Propositions
 
 A **proposition** is a statement that can be classified as either true or false.
@@ -170,7 +214,7 @@ if (ownsPost || isModerator) {
 
 In mathematical logic, OR normally means **inclusive OR**: it is also true when both propositions are true.
 
-That distinction matters because ordinary conversation sometimes uses "or" to mean exactly one choice. If exactly one of two conditions may be true, that is **exclusive OR (XOR)**.
+That distinction matters because ordinary conversation sometimes uses "or" to mean exactly one choice. If exactly one of two conditions may be true, that is **exclusive OR (XOR)**, often written `⊕`.
 
 ---
 
@@ -685,7 +729,7 @@ The central ideas of this unit are small:
 - `∃` means at least one exists.
 - `∈` means **is an element of** or **belongs to** a set.
 
-A useful way to keep the three similar-looking symbols straight is: `∀` = **every**, `∃` = **exists**, `∈` = **belongs to**.
+The **Symbol reference** near the top of this unit also previews notation that will appear later in the course, so you can use it as a quick lookup whenever an unfamiliar symbol appears.
 
 None of these ideas is individually very large. Their importance comes from what we can build with them.
 
