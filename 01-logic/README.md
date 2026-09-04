@@ -6,6 +6,27 @@ Every time a program asks whether a user is logged in, whether a value is valid,
 
 The purpose of this unit is therefore not to teach programmers how `if` statements work. It is to take something you already use intuitively and give it a precise mathematical language. That language will become useful later when we describe sets, proofs, algorithms, graphs, and entire systems.
 
+## Table of Contents
+
+- [Learning goals](#learning-goals)
+- [Symbol reference](#symbol-reference)
+- [1. Propositions](#1-propositions)
+- [2. Negation — NOT](#2-negation--not)
+- [3. Conjunction — AND](#3-conjunction--and)
+- [4. Disjunction — OR](#4-disjunction--or)
+- [5. Combining logical expressions](#5-combining-logical-expressions)
+- [6. Implication — IF ... THEN](#6-implication--if--then)
+- [7. Equivalence — IF AND ONLY IF](#7-equivalence--if-and-only-if)
+- [8. Truth tables as exhaustive testing](#8-truth-tables-as-exhaustive-testing)
+- [9. Logical equivalence](#9-logical-equivalence)
+- [10. Predicates](#10-predicates)
+- [11. Quantifiers](#11-quantifiers)
+- [Putting it together: describing a system rule](#putting-it-together-describing-a-system-rule)
+- [Worked example](#worked-example)
+- [Practice](#practice)
+- [Review](#review)
+- [Next](#next)
+
 ## Learning goals
 
 By the end of this unit, you should be able to:
@@ -61,6 +82,8 @@ Discrete mathematics uses a compact symbolic vocabulary. Some of these symbols b
 \*Some textbooks use `⊂` differently, so when precision matters we will state explicitly whether we mean a proper subset. `⊆` unambiguously allows the two sets to be equal.
 
 The most important symbols **for this unit** are `¬`, `∧`, `∨`, `→`, `↔`, `≡`, `∀`, and `∃`. The set-membership symbol `∈` also appears because quantified statements often say which collection an object belongs to. The others are previews; they will be introduced properly when their units arrive.
+
+For a course-wide reference that also shows how to type the notation in LaTeX, see [SYMBOLS.md](../SYMBOLS.md).
 
 ---
 
